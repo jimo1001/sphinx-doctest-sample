@@ -1,0 +1,22 @@
+{
+  "name": "sphinx-doctest-sample",
+  "private": true,
+  "version": "0.9.0",
+  "description": "document sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "textlint source/"
+  },
+  "keywords": [
+    "sphinx",
+    "textlint",
+    "document"
+  ],
+  "author": "jimo1001",
+  "license": "MIT",
+  "devDependencies": {
+    "textlint": "^6.2.0",
+    "textlint-plugin-rst": "^0.1.1",
+    "textlint-rule-preset-jtf-style": "^2.1.2"
+  }
+}

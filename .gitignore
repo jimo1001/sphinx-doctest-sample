@@ -1,0 +1,8 @@
+/bin
+/include
+/lib
+/share
+/_build
+/.Python
+/pip-selfcheck.json
+/node_modules

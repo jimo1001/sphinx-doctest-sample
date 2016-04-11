@@ -3,7 +3,7 @@
 /include
 /lib
 /share
-/_build
+/build
 /.Python
 /pip-selfcheck.json
 /node_modules

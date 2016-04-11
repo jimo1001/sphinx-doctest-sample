@@ -4,6 +4,10 @@ node_js:
   - stable
 python:
   - '2.7'
+env:
+  global:
+    - GH_REPO: "github.com/jimo1001/sphinx-doctest-sample.git"
+    - secure: "mjryR5U7rPx3n/7dubkGRlJWw2aUL8HJPSgPJn0a3i+tVeb1iR8mVCQ54seBurJFJy17TlDfeNS5EukqfEesBDT+p85zDGKCXLazTrD/aGNfJbOgF9O2sEfGZSKk3OZodq2Tqa5WxFAvce1l9Y1mi6ytOGkp44XQCkpH2L4tsZFD/7QfWo9tkLGh/6+KgTTC+QlJ5yVFs2dDlhYvd7AnZJkTqaejdqAp6dRhLStTxWMnabVIKfdz3FsGjWkPBE/0pmZIpQUWB96qYhs0jssmqaSU8myKiAWC2HoczrBvFSiOWhgtXZB99RMddd85DRR3cYhaqkAgeI55q38hnUu+H5BD88Sj8YLxtrDWLoQ46zjVKNYfYshgpItIr4e2OgP42rajGyBXS3m1gH1YvfXYK0fTHNT0RBL92gSl1wsd+JSjh147WwrnUcSVdArDH+R5MVFUDuf8/WC6usp40OAG8Y0g36N0Y44HErXOUkHg2vZou1IuNIEr8ahX3UVIwuBYwCMjztvQHu1Tr3vtpF8s3TKt35jNIQt50zRz/NEcUV5gIVXgwXnNE90c/+Kvl9scsVF/0Y6ofCWrLGaAwE/Sy49K/FyrV4dsfPlPo0jN6khTADnkK4a1kjJtfAgi78Jyzt2mMcbvfmQjf8WHsWwkt3wyxcmydI4+djTQ7hokpZw="
 install:
   - sudo pip install -U pip pip-tools
   - sudo pip install -r requirements.txt
@@ -13,7 +17,3 @@ deploy:
   skip_cleanup: true
   provider: script
   script: bash ./deploy.sh
-env:
-  global:
-    GH_REPO: "github.com/jimo1001/sphinx-doctest-sample.git"
-    secure: "mjryR5U7rPx3n/7dubkGRlJWw2aUL8HJPSgPJn0a3i+tVeb1iR8mVCQ54seBurJFJy17TlDfeNS5EukqfEesBDT+p85zDGKCXLazTrD/aGNfJbOgF9O2sEfGZSKk3OZodq2Tqa5WxFAvce1l9Y1mi6ytOGkp44XQCkpH2L4tsZFD/7QfWo9tkLGh/6+KgTTC+QlJ5yVFs2dDlhYvd7AnZJkTqaejdqAp6dRhLStTxWMnabVIKfdz3FsGjWkPBE/0pmZIpQUWB96qYhs0jssmqaSU8myKiAWC2HoczrBvFSiOWhgtXZB99RMddd85DRR3cYhaqkAgeI55q38hnUu+H5BD88Sj8YLxtrDWLoQ46zjVKNYfYshgpItIr4e2OgP42rajGyBXS3m1gH1YvfXYK0fTHNT0RBL92gSl1wsd+JSjh147WwrnUcSVdArDH+R5MVFUDuf8/WC6usp40OAG8Y0g36N0Y44HErXOUkHg2vZou1IuNIEr8ahX3UVIwuBYwCMjztvQHu1Tr3vtpF8s3TKt35jNIQt50zRz/NEcUV5gIVXgwXnNE90c/+Kvl9scsVF/0Y6ofCWrLGaAwE/Sy49K/FyrV4dsfPlPo0jN6khTADnkK4a1kjJtfAgi78Jyzt2mMcbvfmQjf8WHsWwkt3wyxcmydI4+djTQ7hokpZw="

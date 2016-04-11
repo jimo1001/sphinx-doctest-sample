@@ -12,7 +12,9 @@ install:
   - sudo pip install -U pip pip-tools
   - sudo pip install -r requirements.txt
   - npm install
-script: sphinx-build -W -b html source/ build/
+script:
+  - sphinx-build -W -b html source/ build/
+  - npm test
 deploy:
   skip_cleanup: true
   provider: script

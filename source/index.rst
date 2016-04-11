@@ -1,22 +1,16 @@
-.. sphinx-doctest-sample documentation master file, created by
-   sphinx-quickstart on Fri Apr  8 17:20:17 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+======
+テスト
+======
 
-Welcome to sphinx-doctest-sample's documentation!
-=================================================
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
+このドキュメントはsphinxとtextlintを使用しています。
 
 
+正しい文章
+==========
 
-Indices and tables
-==================
+このセクションは正しい。
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+修正した文章
+============
 
+アルファベットは **ABC** のように半角で記述する。

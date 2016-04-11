@@ -10,6 +10,7 @@ install:
   - npm install
 script: sphinx-build -W -b html source/ build/
 deploy:
+  skip_cleanup: true
   provider: script
   script: deploy.sh
 env:

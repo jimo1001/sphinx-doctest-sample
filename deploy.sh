@@ -2,8 +2,7 @@
 
 set -ex
 
-BUILD_DIR="build/html"
-cd $BUILD_DIR
+cd build
 
 git init
 git config user.name "system"
